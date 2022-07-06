@@ -1,0 +1,132 @@
+.about {
+  position: relative;
+
+  &__bg-vector-right {
+    position: absolute;
+    top: -193px;
+    left: 0;
+  }
+
+  &__bg-vector-left {
+    position: absolute;
+    right: 0;
+    bottom: -835px;
+  }
+
+  &__container {
+    position: relative;
+    padding-top: 80px;
+
+    @media screen and (max-width: 767.98px) {
+      max-width: 496px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      padding-top: 200px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      padding-top: 80px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: minmax(360px, 570px) minmax(360px, 570px);
+      grid-template-rows: minmax(397px, 420px) minmax(397px, 697px);
+      row-gap: 60px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      grid-template-columns: 570px 570px;
+      grid-template-rows: 616px 620px;
+      row-gap: 80px;
+    }
+  }
+
+  &__item {
+    &:not(:first-child) {
+      padding-top: 60px;
+
+      @media screen and (min-width: 768px) {
+        padding-top: 0px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      &:nth-child(2) {
+        padding-left: 25px;
+      }
+
+      &:nth-child(3) {
+        padding-right: 25px;
+      }
+    }
+
+    @media screen and (min-width: 1170px) {
+      &:nth-child(2) {
+        padding-left: 45px;
+      }
+
+      &:nth-child(3) {
+        padding-right: 45px;
+      }
+    }
+  }
+
+  &__image-wrapper {
+    border-radius: 16px;
+    background-color: $primaryBgColor;
+
+    & img {
+      border-radius: 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+      border-radius: 16px 16px 16px 0px;
+
+      & img {
+        border-radius: 16px 16px 16px 0px;
+      }
+    }
+  }
+
+  &__content-wrapper {
+    @media screen and (min-width: 1170px) {
+      padding-top: 15px;
+    }
+  }
+
+  &__title {
+    font-size: calc(28px + 12 * ((100vw - 320px) / (1170 - 320)));
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1170px) {
+      font-size: 48px;
+    }
+  }
+
+  &__description {
+    margin-top: 30px;
+    font-size: calc(14px + 2 * ((100vw - 320px) / (1170 - 320)));
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 15px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      font-size: 16px;
+      &:last-child {
+        margin-top: 30px;
+      }
+    }
+  }
+}

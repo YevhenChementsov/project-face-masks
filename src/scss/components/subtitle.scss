@@ -1,0 +1,21 @@
+.subtitle {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  color: $titleColor;
+}
+
+.subtitle-rubik-medium {
+  @extend .subtitle;
+  font-family: $secondaryFont;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.subtitle-rubik-bold {
+  @extend .subtitle;
+  font-family: $secondaryFont;
+  line-height: 2.5;
+}

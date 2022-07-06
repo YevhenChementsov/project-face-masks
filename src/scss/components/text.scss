@@ -1,0 +1,42 @@
+.main-text {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.main-text-bold {
+  @extend .main-text;
+  font-weight: 700;
+}
+
+.secondary-text {
+  @extend .main-text;
+  font-size: 15px;
+  line-height: 1.47;
+}
+
+.tertiary-text {
+  @extend .main-text;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hero-text {
+  @extend .main-text;
+  line-height: 1.5;
+}
+
+.contacts-text {
+  @extend .main-text;
+  font-size: 15px;
+  line-height: 1.33;
+  color: $titleColor;
+}
+
+.copyright-text {
+  @extend .main-text;
+  font-size: 14px;
+  line-height: 2.14;
+}

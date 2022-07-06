@@ -1,0 +1,38 @@
+.conclusion {
+  &__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (max-width: 767.98px) {
+      max-width: 496px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      padding-top: 112px;
+      padding-bottom: 120px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.item {
+  &__description {
+    margin-top: 27px;
+    max-width: 664px;
+    text-align: center;
+  }
+
+  &__button {
+    margin-top: 35px;
+  }
+}

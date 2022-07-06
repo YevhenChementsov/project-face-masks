@@ -1,0 +1,14 @@
+.navigation {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: $primaryTextColor;
+}
+
+.footer-navigation {
+  @extend .navigation;
+  font-size: 15px;
+  line-height: 2;
+}

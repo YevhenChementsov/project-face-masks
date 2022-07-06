@@ -1,0 +1,105 @@
+.advantages {
+  background-color: $secondaryBgColor;
+
+  &__list {
+    display: grid;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: minmax(360px, 550px) minmax(360px, 550px);
+    }
+
+    @media screen and (min-width: 1170px) {
+      grid-template-columns: 270px 254px 254px 270px;
+      column-gap: 31px;
+      padding-bottom: 53px;
+    }
+  }
+
+  &__item {
+    padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 60px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      padding-top: 72px;
+      min-width: 254px;
+      min-height: 179px;
+
+      &:nth-child(3n + 1) {
+        min-width: 270px;
+        min-height: 179px;
+      }
+    }
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1170px) {
+  }
+
+  &__text-wrapper {
+    margin-left: 25px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      margin-left: 20px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 210px;
+    min-height: 54px;
+    font-size: calc(20px + 5 * ((100vw - 320px) / (1170 - 320)));
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 768px) {
+      font-size: calc(16px + 8 * ((100vw - 320px) / (1170 - 320)));
+    }
+
+    @media screen and (min-width: 1170px) {
+      font-size: 20px;
+    }
+  }
+
+  &__description {
+    max-width: 210px;
+    min-height: 110px;
+    margin-top: 25px;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1170px) {
+      margin-top: 15px;
+      font-size: 15px;
+    }
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    fill: $accentColor;
+
+    &:hover,
+    &:focus {
+      fill: $secondaryAccentColor;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

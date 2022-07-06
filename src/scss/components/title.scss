@@ -1,0 +1,12 @@
+.title {
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.04;
+  color: $titleColor;
+}
+
+.primary-title {
+  @extend .title;
+  font-size: 72px;
+}

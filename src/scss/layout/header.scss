@@ -1,0 +1,76 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    max-width: 496px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 1170px;
+    }
+  }
+
+  &__logo {
+    flex: 1 1 161px;
+    display: block;
+    max-width: 161px;
+    height: 40px;
+    background-color: #c4c4c4;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      flex: 1 1 123px;
+      max-width: 123px;
+      max-height: 47px;
+    }
+  }
+
+  .menu {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      flex: 1 1 443px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      margin-right: 45px;
+      justify-content: flex-end;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      @media screen and (min-width: 1170px) {
+        gap: 45px;
+      }
+    }
+
+    &__link {
+      letter-spacing: 0.03em;
+      color: $primaryTextColor;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        color: $titleColor;
+      }
+    }
+  }
+}

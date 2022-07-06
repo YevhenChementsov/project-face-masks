@@ -1,0 +1,115 @@
+#hamburger-menu__toggle {
+  opacity: 0;
+  &:checked {
+    + {
+      .hamburger-menu__btn {
+        > span {
+          transform: rotate(45deg);
+          &::before {
+            top: 0;
+            transform: rotate(0deg);
+          }
+          &::after {
+            top: 0;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+    ~ {
+      .hamburger-menu__box {
+        top: 0;
+      }
+    }
+  }
+}
+
+.hamburger-menu {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+
+    & > span {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #616161;
+      transition-duration: 0.25s;
+
+      &::before {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+        transition-duration: 0.25s;
+        content: '';
+        top: -8px;
+      }
+
+      &::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+        transition-duration: 0.25s;
+        content: '';
+        top: 8px;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    top: -100%;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 60px 0;
+    list-style: none;
+    background-color: $secondaryBgColor;
+    transition-duration: 0.25s;
+  }
+
+  &__menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__item {
+    display: block;
+    padding: 12px 24px;
+    color: $primaryTextColor;
+    font-family: $primaryFont;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition-duration: 0.25s;
+
+    &:hover {
+      color: $titleColor;
+      background-color: $accentColor;
+      box-shadow: 0px 0px 5px 1px $accentColor;
+    }
+  }
+}
