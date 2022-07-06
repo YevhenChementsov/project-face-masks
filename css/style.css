@@ -561,7 +561,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.item__description {
+.item__adv-description {
   max-width: 210px;
   min-height: 110px;
   margin-top: 25px;
@@ -867,6 +867,11 @@ img {
   padding-left: 0;
   grid-column-start: span 2;
   grid-row-start: span 1;
+}
+
+.item__reason-description {
+  margin-top: 30px;
+  text-align: start;
 }
 
 .item__advantages-description {
@@ -1609,7 +1614,7 @@ img {
     font-size: 20px;
   }
 
-  .item__description {
+  .item__adv-description {
     margin-top: 15px;
     font-size: 15px;
   }
