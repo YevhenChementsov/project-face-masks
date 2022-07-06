@@ -602,14 +602,14 @@ img {
     font-size: 20px;
   }
 }
-.item__description {
+.item__adv-description {
   max-width: 210px;
   min-height: 110px;
   margin-top: 25px;
   letter-spacing: 0.03em;
 }
 @media screen and (min-width: 1170px) {
-  .item__description {
+  .item__adv-description {
     margin-top: 15px;
     font-size: 15px;
   }
@@ -1136,6 +1136,10 @@ img {
   }
 }
 
+.item__reason-description {
+  margin-top: 30px;
+  text-align: start;
+}
 .item__advantages-description {
   max-width: none;
   min-height: auto;
