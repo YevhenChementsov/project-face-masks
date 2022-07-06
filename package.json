@@ -4,10 +4,10 @@
   "description": "",
   "main": "gulpfile.js",
   "type": "module",
-  "homepage": "https://github.com/YevhenChementsov/project-face-masks",
+  "homepage": "https://yevhenchementsov.github.io/project-face-masks",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YevhenChementsov/project-face-masks.git"
+    "url": "git+https://yevhenchementsov.github.io/project-face-masks.git"
   },
   "scripts": {
     "build": "gulp build --build",
