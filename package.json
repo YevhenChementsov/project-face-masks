@@ -4,6 +4,11 @@
   "description": "",
   "main": "gulpfile.js",
   "type": "module",
+  "homepage": "https://github.com/YevhenChementsov/project-face-masks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YevhenChementsov/project-face-masks.git"
+  },
   "scripts": {
     "build": "gulp build --build",
     "dev": "gulp",
@@ -14,6 +19,9 @@
   },
   "author": "Yevhen Chementsov <yevhenchementsov@gmail.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YevhenChementsov/project-face-masks/issues"
+  },
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",
