@@ -4,15 +4,16 @@
   "description": "",
   "main": "gulpfile.js",
   "type": "module",
-  "homepage": "https://yevhenchementsov.github.io/project-face-masks",
+  "homepage": "https://YevhenChementsov.github.io/project-face-masks",
   "repository": {
     "type": "git",
-    "url": "git+https://yevhenchementsov.github.io/project-face-masks.git"
+    "url": "git+https://YevhenChementsov.github.io/project-face-masks.git"
   },
   "scripts": {
     "build": "gulp build --build",
     "dev": "gulp",
-    "deploy": "gulp build && gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "ftp": "gulp deployFtp --build",
     "sprite": "gulp sprite",
     "zip": "gulp deployZip -- build"
@@ -26,6 +27,7 @@
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",
     "fs": "^0.0.1-security",
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",

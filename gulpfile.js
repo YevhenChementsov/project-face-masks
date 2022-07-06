@@ -41,11 +41,7 @@ const deployZip = gulp.series(clean, mainTask, zip);
 
 gulp.task('default', dev);
 gulp.task('deploy', function () {
-  return app.gulp.src('./dist/**/*').pipe(ghPages({ 
-        remoteUrl: "https://github.com/your_github_username_here/your_github_username_here.github.io.git",
-        branch: "master"
-      }))
-  }));
+  return app.gulp.src('./dist/**/*').pipe(ghPages());
 });
 
 export { sprite };
