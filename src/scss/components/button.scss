@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 115px;
-  min-height: 46px;
+  width: 115px;
+  height: 46px;
   font-family: $secondaryFont;
   font-size: 14px;
   font-weight: 500;
@@ -22,32 +22,40 @@
     border: $secondaryAccentColor;
     box-shadow: 0px 0px 10px 2px $secondaryAccentColor;
   }
+}
 
-  &--yellow {
-    width: 125px;
-    color: $accentColor;
-    background-color: transparent;
-    border: 1px solid $accentColor;
+.header-button {
+  @extend .button;
+  width: 123px;
+  height: 47px;
+}
 
-    &:hover,
-    &:focus {
-      color: #ffffff;
-      background-color: $accentColor;
-      box-shadow: 0px 0px 5px 1px $accentColor;
-    }
+.yellow-button {
+  @extend .button;
+  width: 125px;
+  color: $accentColor;
+  background-color: transparent;
+  border: 1px solid $accentColor;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $accentColor;
+    box-shadow: 0px 0px 5px 1px $accentColor;
   }
+}
 
-  &--blue {
-    width: 125px;
-    color: $secondaryAccentColor;
-    background-color: transparent;
-    border: 1px solid $secondaryAccentColor;
+.blue-button {
+  @extend .button;
+  width: 125px;
+  color: $secondaryAccentColor;
+  background-color: transparent;
+  border: 1px solid $secondaryAccentColor;
 
-    &:hover,
-    &:focus {
-      color: #ffffff;
-      background-color: $secondaryAccentColor;
-      box-shadow: 0px 0px 5px 1px $secondaryAccentColor;
-    }
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $secondaryAccentColor;
+    box-shadow: 0px 0px 5px 1px $secondaryAccentColor;
   }
 }

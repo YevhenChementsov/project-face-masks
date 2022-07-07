@@ -149,12 +149,12 @@ img {
   line-height: 2.5;
 }
 
-.button {
+.button, .blue-button, .yellow-button, .header-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 115px;
-  min-height: 46px;
+  width: 115px;
+  height: 46px;
   font-family: "Rubik", sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -166,30 +166,37 @@ img {
   cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button:hover, .button:focus {
+.button:hover, .blue-button:hover, .yellow-button:hover, .header-button:hover, .button:focus, .blue-button:focus, .yellow-button:focus, .header-button:focus {
   color: #1b5fc1;
   background-color: #ffffff;
   border: #1b5fc1;
   box-shadow: 0px 0px 10px 2px #1b5fc1;
 }
-.button--yellow {
+
+.header-button {
+  width: 123px;
+  height: 47px;
+}
+
+.yellow-button {
   width: 125px;
   color: #ffb800;
   background-color: transparent;
   border: 1px solid #ffb800;
 }
-.button--yellow:hover, .button--yellow:focus {
+.yellow-button:hover, .yellow-button:focus {
   color: #ffffff;
   background-color: #ffb800;
   box-shadow: 0px 0px 5px 1px #ffb800;
 }
-.button--blue {
+
+.blue-button {
   width: 125px;
   color: #1b5fc1;
   background-color: transparent;
   border: 1px solid #1b5fc1;
 }
-.button--blue:hover, .button--blue:focus {
+.blue-button:hover, .blue-button:focus {
   color: #ffffff;
   background-color: #1b5fc1;
   box-shadow: 0px 0px 5px 1px #1b5fc1;
